@@ -33,7 +33,7 @@ body{
      grid-template-columns: auto auto auto auto;
      margin-top: 40px;
      padding-top: 40px;
-     font-size: larger; 
+     font-size: medium; 
  }
  .imgrer{
      width: 700px;
