@@ -1,6 +1,6 @@
 function updateTimer() {
     // Set the initial countdown date (February 28, 2024 11:40:00)
-    var countDownDate = new Date("February 28, 2024 18:59:59").getTime();
+    var countDownDate = new Date("February 28, 2024 11:40:00").getTime();
 
     // Update the countdown every 1 second
     var x = setInterval(function() {
