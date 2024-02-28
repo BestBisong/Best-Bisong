@@ -1,55 +1,78 @@
-body{
+/* Existing CSS */
+
+body {
     background-image: url(343.jpg);
     background-size: cover;
-    /* background-color: black; */
- }
- p{
-     color:white;
-     
- }
- .content{
-     font-size: medium;
-     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-     float: top right;
-     display:flexbox;
-     flex-direction: column;
- }
- h1{
-     color: white;
-     
- }
- h2{
-     color: white;
-     font-size: medium;
-     padding: 4px;
-     flex-direction: row;
- }
- .timer{
-     color: white;
-     text-align: center;
-     box-sizing: border-box;
-     width: 30%;
-     display: grid;
-     grid-template-columns: auto auto auto auto;
-     margin-top: 40px;
-     padding-top: 40px;
-     font-size: medium; 
- }
- .imgrer{
-     width: 700px;
-     height: 300px; 
-     float: left;
-     flex-direction: row;
- }
- img{
-     width: 300px;
-     height: 550px;
-     padding-left: 70px;
+}
 
- }
- @media(width:600px){
-    .content,.timer{
+p {
+    color: white;
+}
+
+.content {
+    font-size: medium;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    float: top right;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    color: white;
+}
+
+h2 {
+    color: white;
+    font-size: medium;
+    padding: 4px;
+    flex-direction: row;
+}
+
+.timer {
+    color: white;
+    text-align: center;
+    box-sizing: border-box;
+    width: 30%;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    margin-top: 40px;
+    padding-top: 40px;
+    font-size: larger;
+}
+
+.imgrer {
+    width: 700px;
+    height: 300px;
+    float: left;
+    flex-direction: row;
+}
+
+img {
+    width: 300px;
+    height: 550px;
+    padding-left: 70px;
+}
+
+/* Media Query for Responsive Design */
+
+@media (max-width: 600px) {
+    .content, .timer {
         flex-direction: column;
-
     }
- }
+
+    .imgrer {
+        width: auto; /* Adjust width to fit smaller screens */
+        height: auto; /* Adjust height to fit smaller screens */
+        float: none; /* Remove float for stacking on smaller screens */
+    }
+
+    img {
+        width: 100%; /* Make images responsive to the width of their container */
+        height: auto; /* Maintain aspect ratio */
+        padding-left: 0; /* Reset padding for smaller screens */
+    }
+
+    .timer {
+        grid-template-columns: auto auto; /* Adjust grid columns for smaller screens */
+    }
+}
