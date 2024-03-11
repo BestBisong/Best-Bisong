@@ -73,6 +73,6 @@ img {
     }
 
     .timer {
-        grid-template-columns: auto auto; /* Adjust grid columns for smaller screens */
+        grid-template-columns: auto; /* Adjust grid columns for smaller screens */
     }
 }
